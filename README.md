@@ -6,8 +6,10 @@
 
 本文以armv8架构为例，且docker的工作目录为`/volume1/docker`
 
+
 ## 查询处理器架构
 可通过`uname -m`命令查询，如DS118的处理器架构为aarch64
+
 
 ## 下载并安装docker最新版本
 地址请前往[Docker](https://download.docker.com/linux/static/stable)根据架构替换最新版本下载地址（以下以armv8架构为例）
@@ -40,6 +42,7 @@ vi /etc/docker/daemon.json
 ## 运行docker
 执行`sudo dockerd &`，如无意外，docker将顺利启动
 
+
 ## 启动时自动运行docker
 创建计划任务
 
@@ -55,6 +58,7 @@ vi /etc/docker/daemon.json
 ```
 dockerd &
 ```
+
 
 ## 自动安装脚本
 ```bash
