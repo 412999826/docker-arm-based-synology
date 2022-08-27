@@ -60,7 +60,7 @@ dockerd &
 ```
 
 
-## 自动安装脚本
+## 一键安装脚本
 ```bash
 wget -qO- https://github.com/412999826/docker-arm-based-synology/raw/main/install.sh| bash
 ```
