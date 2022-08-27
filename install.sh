@@ -13,7 +13,7 @@ mkdir -p "$DOCKER_DIR"
 
 echo "创建 docker.json 配置文件"
 mkdir -p /etc/docker
-cat <<EOT > "/etc/docker/daemon.json
+cat <<EOT > /etc/docker/daemon.json
 {
   "storage-driver": "vfs",
   "iptables": false,
