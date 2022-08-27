@@ -21,4 +21,4 @@ cat <<EOT > /etc/docker/daemon.json
 }
 EOT
 
-echo "完成。 请添加计划任务并重启NAS."
+echo "完成,请添加计划任务并重启NAS"
