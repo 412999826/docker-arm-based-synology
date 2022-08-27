@@ -24,12 +24,12 @@ mkdir -p /volume1/docker
 mkdir -p /etc/docker
 ```
 
-*创建配置文件
+* 创建配置文件
 ```bash
 vi /etc/docker/daemon.json
 ```
 
-* 按`I`进入编辑模式，键入以下内容（`--conf-path=`后面键入aria2配置文件路径，对应的aria2.conf文件内容也需要修改）
+* 按`I`进入编辑模式，键入以下内容
 ```bash
 {
   "storage-driver": "vfs",
@@ -37,7 +37,7 @@ vi /etc/docker/daemon.json
   "data-root": "/volume1/docker"
 }
 ```
-
+‘/volume1/docker’为docker工作目录，可根据需要进行修改
 
 ## 运行docker
 执行`sudo dockerd &`，如无意外，docker将顺利启动
