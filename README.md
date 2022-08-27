@@ -6,14 +6,17 @@
 
 本文以armv8架构为例，且docker的工作目录为`/volume1/docker`
 
-1. 通过`uname -m`命令查询处理器架构，如DS118的处理器架构为aarch64
+## 1. 通过`uname -m`命令查询处理器架构
+如DS118的处理器架构为aarch64
 
-2. 下载最新版本，地址请前往[Docker](https://download.docker.com/linux/static/stable)根据架构替换最新版本下载地址（以下以armv8架构为例）
+## 2. 下载并安装docker最新版本
+地址请前往[Docker](https://download.docker.com/linux/static/stable)根据架构替换最新版本下载地址（以下以armv8架构为例）
 ```
 curl "https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz" | tar -xz -C /usr/bin --strip-components=1
 ```
 
-3.创建工作目录及配置文件（"data-root"后面的工作目录可以根据需要更换）
+## 3.创建工作目录及配置文件
+"/volume1/docker"后面的工作目录可以根据需要更换
 ```
 mkdir -p /volume1/docker
 mkdir -p /etc/docker
@@ -26,13 +29,14 @@ cat <<EOT > "/etc/docker/daemon.json
 EOT
 ```
 
-4.运行docker
+## 4.运行docker
 ```
 sudo dockerd &
 ```
 
-5.创建计划任务，启动时自动运行docker
-创建计划任务启动时自动配置防火墙
+## 5.创建计划任务
+启动时自动运行docker
+
 * 转到：DSM>控制面板>计划任务
 * 新增>触发的任务>用户定义的脚本
   * 常规
