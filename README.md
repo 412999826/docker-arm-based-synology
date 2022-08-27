@@ -4,7 +4,7 @@
 
 安装过程需开启群晖的SSH功能，并通过`sudo -i`切换到root用户
 
-本文以armv8架构为例，且docker的工作目录为`/volume1/docker`
+本文以armv8（aarch64）架构为例，且docker的工作目录为`/volume1/docker`
 
 
 ## 查询处理器架构
@@ -39,6 +39,12 @@ vi /etc/docker/daemon.json
 ```
 上述配置中`/volume1/docker`为docker工作目录，可根据需要进行修改
 
+
+## 一键安装脚本（仅适用于armv8架构）
+```bash
+wget -qO- https://github.com/412999826/docker-arm-based-synology/raw/main/install.sh| bash
+```
+
 ## 运行docker
 执行`dockerd &`，如无意外，docker将顺利启动
 
@@ -57,10 +63,4 @@ vi /etc/docker/daemon.json
     * 运行命令：（请参阅下面的命令）
 ```
 dockerd &
-```
-
-
-## 一键安装脚本
-```bash
-wget -qO- https://github.com/412999826/docker-arm-based-synology/raw/main/install.sh| bash
 ```
