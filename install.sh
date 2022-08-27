@@ -3,7 +3,7 @@ set -e
 
 ARCH=aarch64
 DOCKER_VERSION=20.10.9
-DOCKER_DIR=/volume1/docker
+DOCKER_DIR=/volume1/@docker
 
 echo "下载 docker $DOCKER_VERSION-$ARCH"
 curl "https://download.docker.com/linux/static/stable/$ARCH/docker-$DOCKER_VERSION.tgz" | tar -xz -C /usr/bin --strip-components=1
