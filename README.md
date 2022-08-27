@@ -6,8 +6,8 @@
 
 本文以armv8架构为例，且docker的工作目录为`/volume1/docker`
 
-## 1. 通过`uname -m`命令查询处理器架构
-如DS118的处理器架构为aarch64
+## 1. 查询处理器架构
+可通过`uname -m`命令查询，如DS118的处理器架构为aarch64
 
 ## 2. 下载并安装docker最新版本
 地址请前往[Docker](https://download.docker.com/linux/static/stable)根据架构替换最新版本下载地址（以下以armv8架构为例）
