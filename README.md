@@ -46,7 +46,7 @@ wget -qO- https://github.com/412999826/docker-arm-based-synology/raw/main/instal
 ```
 
 ## 运行docker
-执行`dockerd &`，如无意外，docker将顺利启动
+执行`dockerd &`，如屏幕最后显示`API listen on /var/run/docker.sock`，则表示docker顺利启动，此时可以按`ctrl+C`退出。
 
 
 ## 启动时自动运行docker
