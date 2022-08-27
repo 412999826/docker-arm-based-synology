@@ -37,7 +37,7 @@ vi /etc/docker/daemon.json
   "data-root": "/volume1/@docker"
 }
 ```
-上述配置中`/volume1/docker`为docker工作目录，可根据需要进行修改
+上述配置中`/volume1/@docker`为docker工作目录，可根据需要进行修改
 
 
 ## 一键安装脚本（仅适用于armv8架构）
