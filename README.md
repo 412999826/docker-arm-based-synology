@@ -21,11 +21,11 @@ curl "https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz
 * 创建工作目录
 ```bash
 mkdir -p /volume1/docker
-mkdir -p /etc/docker
 ```
 
 * 创建配置文件
 ```bash
+mkdir -p /etc/docker
 vi /etc/docker/daemon.json
 ```
 
