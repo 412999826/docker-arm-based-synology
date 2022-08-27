@@ -4,7 +4,7 @@
 
 安装过程需开启群晖的SSH功能，并通过`sudo -i`切换到root用户
 
-本文以armv8（aarch64）架构为例，且docker的工作目录为`/volume1/docker`
+本文以armv8（aarch64）架构为例，且docker的工作目录为`/volume1/@docker`
 
 
 ## 查询处理器架构
@@ -20,7 +20,7 @@ curl "https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz
 ## 创建工作目录及配置文件
 * 创建工作目录
 ```bash
-mkdir -p /volume1/docker
+mkdir -p /volume1/@docker
 ```
 
 * 创建配置文件
@@ -34,7 +34,7 @@ vi /etc/docker/daemon.json
 {
   "storage-driver": "vfs",
   "iptables": false,
-  "data-root": "/volume1/docker"
+  "data-root": "/volume1/@docker"
 }
 ```
 上述配置中`/volume1/docker`为docker工作目录，可根据需要进行修改
