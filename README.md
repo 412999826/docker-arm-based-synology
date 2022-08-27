@@ -1,4 +1,4 @@
-# Arm架构群晖安装Docker
+# ARM架构群晖安装Docker
 * 可安装于ARM架构的群晖
 * DSM7.0以上支持bridge模式
 
