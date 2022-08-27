@@ -12,7 +12,7 @@
 
 
 ## 下载并安装docker最新版本
-地址请前往[Docker](https://download.docker.com/linux/static/stable)根据架构替换最新版本下载地址（以下以armv8架构为例）
+地址请前往[Docker](https://download.docker.com/linux/static/stable)，根据架构替换最新版本下载地址（以下以armv8架构为例）
 ```bash
 curl "https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz" | tar -xz -C /usr/bin --strip-components=1
 ```
